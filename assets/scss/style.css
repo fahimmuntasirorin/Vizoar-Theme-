@@ -376,23 +376,26 @@ p {
   font-weight: 500;
 }
 .header-main .search-main {
-  padding-right: 40px;
+  margin-left: 10px;
+}
+.header-main .search-main .search-box {
+  margin-right: 35px;
   position: relative;
 }
-.header-main .search-main i {
+.header-main .search-main .search-box i {
   font-size: 20px;
   font-weight: bold;
   line-height: unset;
 }
-.header-main .search-main i::after {
+.header-main .search-main .search-box i::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 40px;
+  right: -25px;
   width: 2px;
   height: 100%;
   background-color: var(--black);
 }
-.header-main .search-main .search-box {
-  margin-right: 40px;
+.header-main .search-main .aside-menu a {
+  margin-left: 25px;
 }/*# sourceMappingURL=style.css.map */
