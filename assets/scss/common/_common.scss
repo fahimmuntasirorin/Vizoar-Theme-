@@ -1,0 +1,185 @@
+/*
+  Theme Name: Bentofolio - Bootstrap Personal Portfolio Template
+  Support: marveltheme@gmail.com
+  Description: Bentofolio - Bootstrap Personal Portfolio Template
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Variable CSS
+02. Common CSS
+03. Header
+04. Home
+05. About
+06. Services
+07. Portfolio
+08. Blog
+09. Contact
+10. Footer
+11. Theme Control
+============================
+*/
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+/*=============================
+	01. Variable CSS start
+===============================*/
+
+:root {
+	--font-family: "Space Grotesk", sans-serif;
+	--primary: #EEF6E7;
+    --secondary:#83CD8F;
+	--black: #090F1F;
+	--white: #ffffff;
+	--paragraph: #616670;
+	--background: #F0F2F5;
+	--font-size: 16px;
+	--font-weight: 400;
+	--line-height: 1.6em;
+	--transision: all 0.1s ease-out 0s;
+	--border: #090F1F;
+    --shadow:#1310220D;
+}
+/*=============================
+	02. Common CSS start
+===============================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-family);
+	font-weight: var(--font-weight);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	color: var(--black);
+	overflow-x: hidden;
+	background-color: var(--background);
+	padding: 24px 0 24px 0;
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 88px;
+}
+h2{
+font-size: 50px;
+line-height: 55px;
+}
+
+h3{
+font-size: 30px;
+line-height: 30px;
+}
+h4{
+font-size: 25px;
+line-height: 28px;
+}
+
+h5{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h6{
+font-size: 14px;
+line-height: 22px;
+}
+
+a,
+span,
+small {
+	display: inline-block;
+}
+
+a,
+button {
+	-webkit-transition: all 0.1s ease-out 0s;
+	-moz-transition: all 0.1s ease-out 0s;
+	-ms-transition: all 0.1s ease-out 0s;
+	-o-transition: all 0.1s ease-out 0s;
+	transition: all 0.1s ease-out 0s;
+	text-decoration: none;
+}
+
+a:focus,
+.btn:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	line-height: var(--line-height);
+	color: var(--paragraph);
+	margin: 0;
+	padding: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+*::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+
+
+
+
