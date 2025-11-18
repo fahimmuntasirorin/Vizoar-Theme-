@@ -38,7 +38,7 @@
   --font-size: 16px;
   --font-weight: 400;
   --line-height: 1.6em;
-  --transision: all 0.1s ease-out 0s;
+  --transition: all 0.1s ease-out 0s;
   --border: #090F1F;
   --shadow:0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
@@ -61,7 +61,6 @@ body {
   color: var(--black);
   overflow-x: hidden;
   background-color: var(--background);
-  padding: 24px 0 24px 0;
   min-height: 100vh;
 }
 
@@ -212,7 +211,7 @@ p {
   --font-size: 16px;
   --font-weight: 400;
   --line-height: 1.6em;
-  --transision: all 0.1s ease-out 0s;
+  --transition: all 0.1s ease-out 0s;
   --border: #090F1F;
   --shadow:0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
@@ -235,7 +234,6 @@ body {
   color: var(--black);
   overflow-x: hidden;
   background-color: var(--background);
-  padding: 24px 0 24px 0;
   min-height: 100vh;
 }
 
@@ -354,6 +352,7 @@ p {
   margin: 0 auto;
   box-shadow: var(--shadow);
   border-radius: 999px;
+  margin-top: 30px;
 }
 .header-main .logo-main {
   padding-left: 30px;
@@ -396,6 +395,74 @@ p {
   height: 100%;
   background-color: var(--black);
 }
-.header-main .search-main .aside-menu a {
+.header-main .search-main .aside-menu-top a {
   margin-left: 25px;
+}
+
+.aside-menu-overlay {
+  transition: var(--transition);
+}
+.aside-menu-overlay::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+}
+.aside-menu-overlay.open::before {
+  width: 100%;
+}
+
+.aside-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100%;
+  background-color: var(--black);
+  transition: var(--transition);
+}
+.aside-menu .aside-wrapper {
+  margin-top: 30px;
+}
+.aside-menu .aside-wrapper .logo-main .logo-text {
+  color: var(--white);
+}
+.aside-menu .aside-wrapper .aside-logo-close i {
+  color: var(--white);
+  line-height: unset;
+  font-size: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.aside-menu .aside-menu-content ul {
+  list-style: none;
+}
+.aside-menu .aside-menu-content ul li a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}
+.aside-menu .aside-menu-content ul li a i {
+  font-size: 18px;
+  line-height: unset;
+}
+.aside-menu .aside-menu-content ul li a:hover {
+  background-color: var(--secondary);
+}
+.aside-menu .aside-menu-content ul .aside-submenu {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.aside-menu .aside-menu-content ul .aside-submenu.open {
+  max-height: 300px;
+  opacity: 1;
+}
+.aside-menu.open {
+  width: 350px;
 }/*# sourceMappingURL=style.css.map */

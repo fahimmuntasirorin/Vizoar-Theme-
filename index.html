@@ -39,7 +39,7 @@
                     <div class="search-box">
                         <i class="fa-regular fa-magnifying-glass"></i>
                     </div>
-                    <div class="aside-menu">
+                    <div class="aside-menu-top">
                         <a href="#"><svg width="30" height="20" viewBox="0 0 30 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <line y1="11.3556" x2="29.9977" y2="11.3556" stroke="#090F1F" stroke-width="3" />
@@ -50,6 +50,51 @@
                 </div>
             </div>
         </div>
+        <!-- aside menu start -->
+        <div class="aside-menu-overlay"></div>
+        <aside class="aside-menu">
+            <div class="aside-wrapper d-flex align-items-center justify-content-between">
+                <div class="logo-main d-flex align-items-center">
+                    <img src="./assets/img/logo/logo.png" alt="logo">
+                    <div class="logo-text">
+                        <span>Vizoar</span>
+                    </div>
+                </div>
+                <div class="aside-logo-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="aside-menu-content">
+                <ul class="d-flex flex-column">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">About Us <i
+                                class="fa-solid fa-plus submenu-opener"></i></a>
+                        <div class="aside-submenu">
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Content</a></li>
+                                <li><a href="#">Services</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">Services <i
+                                class="fa-solid fa-plus submenu-opener"></i></a>
+                        <div class="aside-submenu">
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Content</a></li>
+                                <li><a href="#">Services</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- aside menu end -->
     </header>
     <!-- header area end -->
 
@@ -60,6 +105,8 @@
 
 
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendors/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
