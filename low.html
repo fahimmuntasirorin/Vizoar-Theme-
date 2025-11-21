@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CounterUp Test</title>
+
+  <!-- FULL jQuery (must be FIRST) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- CounterUp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+
+<h1><span class="counter">49</span>/50</h1>
+
+<script>
+$(document).ready(function(){
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+});
+</script>
+
+</body>
+</html>

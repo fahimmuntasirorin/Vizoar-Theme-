@@ -1,0 +1,115 @@
+.banner-section-main {
+  position: relative;
+  >img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 515px;
+    max-width: 515px;
+  }
+  .banner-content {
+    margin-top: 108px;
+    .banner-heading {
+      .banner-special{
+        color: var(--secondary);
+      }
+    }
+    .banner-text {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      p {
+        padding-right: 105px;
+      }
+    }
+    .banner-selection {
+      .banner-choose {
+        gap: 60px;
+        select {
+          padding: 10px 30px;
+          border-radius: 999px;
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  .banner-image {
+    position: relative;
+    .banner-bg{
+      img{
+        max-width: 495px;
+      }
+    }
+    .banner-ratings {
+      background-color: var(--primary);
+      height: 150px;
+      width: 255px;
+      border-radius: 20px;
+      padding: 20px 30px;
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      h6 {
+        margin-top: 10px;
+      }
+    }
+    .banner-country-one,
+    .banner-country-two,
+    .banner-country-three {
+      position: absolute;
+     
+    }
+    .banner-country-one {
+      top: 160px;
+      right: 0;
+      animation: jumpingAnimation 4s ease-in-out infinite ;
+    }
+    .banner-country-two {
+      top: 150px;
+      left: 70px;
+      animation: jumpingAnimation 4s ease-in-out infinite ;
+    }
+    .banner-country-three {
+      bottom: 60px;
+      right: 90px;
+      animation: jumpingAnimation 4s ease-in-out infinite ;
+    }
+  }
+}
+
+@keyframes jumpingAnimation {
+  0%{
+    transform: translateY(0px);
+  }
+   50% {
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.banner-animate {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.banner-animate span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.banner-animate span:nth-child(1) {
+  color: var(--secondary);
+}
+.banner-animate span:nth-child(2) {
+  color: var(--secondary);
+}
+
+@media only screen and (max-width:991.99px){
+  .banner-ratings{
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-40%) !important;
+  }
+}

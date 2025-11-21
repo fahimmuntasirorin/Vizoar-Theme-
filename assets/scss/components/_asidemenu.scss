@@ -1,5 +1,6 @@
 .aside-menu-overlay {
   transition: var(--transition);
+  
   &::before {
     content: "";
     top: 0;
@@ -8,6 +9,7 @@
     width: 0%;
     background-color: rgba($color: #000000, $alpha: 0.8);
     position: fixed;
+    z-index: 998;
     
   }
   &.open::before {
@@ -24,8 +26,10 @@
   height: 100%;
   background-color: var(--black);
   transition: var(--transition);
+  z-index: 999;
   .aside-wrapper {
     margin-top: 30px;
+    padding: 0px 30px;
     .logo-main {
       .logo-text {
         color: var(--white);
@@ -36,13 +40,14 @@
         color: var(--white);
         line-height: unset;
         font-size: 30px;
-        margin-right: 30px;
         cursor: pointer;
+        
       }
     }
   }
   .aside-menu-content {
     ul {
+      padding: 0px 20px;
       list-style: none;
       li {
         a {

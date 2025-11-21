@@ -5,107 +5,323 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizoar</title>
-    <link rel="stylesheet" href="./assets/scss/style.css">
     <link rel="stylesheet" href="./assets/css/fontawsome/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 
 <body>
     <!-- header area start -->
-    <header class="header-main">
-        <div class="row align-items-center">
-            <div class="col-lg-2">
-                <div class="logo-main d-flex align-items-center">
-                    <img src="./assets/img/logo/logo.png" alt="logo">
-                    <div class="logo-text">
-                        <span>Vizoar</span>
+    <div class="container">
+        <header class="header-main">
+            <img class="img-fluid" src="./assets/img/Banner/bannerOne.png" alt="bg-image">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-2">
+                    <div class="logo-main d-flex align-items-center">
+                        <img src="./assets/img/logo/logo.png" alt="logo">
+                        <div class="logo-text">
+                            <span>Vizoar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <nav class="nav-main">
+                        <div class="mobile-nav-close d-lg-none">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <ul class="d-flex align-items-center justify-content-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-10">
+                    <div class="search-main d-flex align-items-center justify-content-center">
+                        <div class="search-box">
+                            <i class="fa-regular fa-magnifying-glass"></i>
+                        </div>
+                        <div class="aside-menu-top">
+                            <a href="#"><svg width="30" height="20" viewBox="0 0 30 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="11.3556" x2="29.9977" y2="11.3556" stroke="#090F1F" stroke-width="3" />
+                                    <path d="M5 21.25H29.998" stroke="#090F1F" stroke-width="3" />
+                                    <path d="M10 1.5H29.9984" stroke="#090F1F" stroke-width="3" />
+                                </svg></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <nav class="nav-main">
-                    <ul class="d-flex align-items-center justify-content-center">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="mobile-menu-bar d-lg-none">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="col-lg-2">
-                <div class="search-main d-flex align-items-center justify-content-center">
-                    <div class="search-box">
-                        <i class="fa-regular fa-magnifying-glass"></i>
+    </div>
+    <!-- aside menu start -->
+    <div class="aside-menu-overlay"></div>
+    <aside class="aside-menu">
+        <div class="aside-wrapper d-flex align-items-center justify-content-between">
+            <div class="logo-main d-flex align-items-center">
+                <img src="./assets/img/logo/logo.png" alt="logo">
+                <div class="logo-text">
+                    <span>Vizoar</span>
+                </div>
+            </div>
+            <div class="aside-logo-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="aside-menu-content">
+            <ul class="d-flex flex-column">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#" class="d-flex justify-content-between">About Us <i
+                            class="fa-solid fa-plus submenu-opener"></i></a>
+                    <div class="aside-submenu">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Content</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
                     </div>
-                    <div class="aside-menu-top">
-                        <a href="#"><svg width="30" height="20" viewBox="0 0 30 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <line y1="11.3556" x2="29.9977" y2="11.3556" stroke="#090F1F" stroke-width="3" />
-                                <path d="M5 21.25H29.998" stroke="#090F1F" stroke-width="3" />
-                                <path d="M10 1.5H29.9984" stroke="#090F1F" stroke-width="3" />
-                            </svg></a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex justify-content-between">Services <i
+                            class="fa-solid fa-plus submenu-opener"></i></a>
+                    <div class="aside-submenu">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Content</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- aside menu end -->
+    </header>
+    <!-- header area end -->
+    <section class="banner-section-main mb-120">
+        <img src="./assets/img/Banner/bannerShape.png" alt="bg-shape">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-content">
+                        <div class="banner-heading">
+                            <h1 class="banner-animate"><span class="banner-special">Visa typically</span> issued by a
+                                country's</h1>
+                        </div>
+                        <div class="banner-text">
+                            <p> A visa is an official document that permits entry into a specific country. It indicates
+                                the holder's permission to stay either temporarily</p>
+                        </div>
+                        <div class="banner-selection">
+                            <div class="banner-choose d-flex">
+                                <div>
+                                    <h3>Where are You Form?</h3>
+                                    <select name="cars" id="cars" class="w-100 border-0">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <h3>Where are You Form?</h3>
+                                    <select name="cars" id="carsX" class="w-100 border-0">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-btn">
+                            <a href="#" class="primary-btn-vzr">get a e visa <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-image">
+                        <div class="banner-bg d-flex justify-content-center">
+                            <img class=" banner-bg-main img-fluid" src="./assets/img/Banner/bannerTwo.png"
+                                alt="banner-img">
+                            <img class="banner-country-one" src="./assets/img/Banner/bannerCountryOne.png" alt="">
+                            <img class="banner-country-two" src="./assets/img/Banner/bannerCountryTwo.png" alt="">
+                            <img class="banner-country-three" src="./assets/img/Banner/bannerCountryThree.png" alt="">
+                        </div>
+                        <div class="banner-ratings">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2><span class="counter">4.9</span>/<span class="counter-star">5</span> </h2>
+                                <div class="rating-star">
+                                    <svg width="41" height="39" viewBox="0 0 41 39" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3893_2041)">
+                                            <g clip-path="url(#clip1_3893_2041)">
+                                                <g clip-path="url(#clip2_3893_2041)">
+                                                    <path
+                                                        d="M20.5005 0L25.3276 14.8561H40.9482L28.3108 24.0377L33.1379 38.8939L20.5005 29.7123L7.86307 38.8939L12.6902 24.0377L0.0527344 14.8561H15.6734L20.5005 0Z"
+                                                        fill="#FAC43A" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h6>Explore our trust score
+                                customer’s reviews</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- aside menu start -->
-        <div class="aside-menu-overlay"></div>
-        <aside class="aside-menu">
-            <div class="aside-wrapper d-flex align-items-center justify-content-between">
-                <div class="logo-main d-flex align-items-center">
-                    <img src="./assets/img/logo/logo.png" alt="logo">
-                    <div class="logo-text">
-                        <span>Vizoar</span>
+    </section>
+    <!-- global access area start -->
+    <section class="global-access-main mb-110">
+        <div class="container">
+            <div class="common-heading-main">
+                <h2 class="common-heading text-center">Your Passport to AdventureVisa <br> Your Global Access</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="global-access-card">
+                        <div class="global-logo-wrapper d-flex justify-content-between align-items-center">
+                            <div class="global-logo d-flex align-items-center justify-content-center">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.887 31.401C30.6952 26.2191 23.0374 30.6568 25.9271 35.9975L28.6892 40.7813H22.5419C12.3098 40.3562 12.3146 25.7791 22.542 25.3571H27.6461C34.8406 25.0864 34.8454 14.7631 27.646 14.4903H16.3108L19.073 9.70576C20.8902 6.79616 18.5222 2.69337 15.0928 2.8126C11.6643 2.69852 9.29524 6.79129 11.1129 9.70582L14.4838 15.545C14.5474 15.6503 14.6366 15.7377 14.7431 15.7992C14.8496 15.8607 14.9699 15.8942 15.0929 15.8966H27.6461C32.967 16.0665 32.9687 23.7812 27.646 23.9509H22.5419C10.4468 24.4502 10.4475 41.6884 22.542 42.1875H29.9072C30.0932 42.182 30.2706 42.1082 30.4055 41.9801C30.4485 41.9371 30.4858 41.8886 30.5163 41.836L33.8874 35.9974C34.2953 35.3002 34.5103 34.507 34.5102 33.6992C34.5102 32.8914 34.2951 32.0982 33.887 31.401ZM12.3305 5.81385C14.5151 2.21604 19.8785 5.31238 17.8548 9.00271L15.0929 13.7872L12.3308 9.00263C12.0476 8.51903 11.8983 7.96872 11.8982 7.40829C11.8981 6.84785 12.0474 6.2975 12.3305 5.81385ZM32.6693 35.2943L29.9072 40.0781L27.1452 35.2943C26.8619 34.8104 26.7126 34.2599 26.7126 33.6992C26.7126 33.1385 26.8619 32.588 27.1452 32.1041C29.3309 28.5071 34.6927 31.604 32.6693 35.2943ZM29.9072 31.1813C29.2443 31.1887 28.6111 31.4573 28.145 31.9287C27.6788 32.4001 27.4174 33.0363 27.4174 33.6992C27.4174 34.3622 27.6789 34.9984 28.145 35.4698C28.6112 35.9412 29.2444 36.2097 29.9073 36.2171C30.5702 36.2097 31.2035 35.9411 31.6696 35.4697C32.1357 34.9983 32.3972 34.3621 32.3971 33.6992C32.3971 33.0362 32.1357 32.4 31.6695 31.9286C31.2034 31.4572 30.5702 31.1887 29.9072 31.1813ZM29.9072 34.8109C29.6153 34.8065 29.3367 34.6875 29.1318 34.4795C28.9269 34.2715 28.812 33.9912 28.812 33.6992C28.812 33.4072 28.9269 33.1269 29.1318 32.9189C29.3368 32.7109 29.6153 32.5919 29.9073 32.5875C30.1993 32.5919 30.4778 32.7109 30.6827 32.9189C30.8877 33.1269 31.0025 33.4072 31.0025 33.6992C31.0025 33.9912 30.8876 34.2715 30.6827 34.4795C30.4778 34.6875 30.1992 34.8066 29.9072 34.8109ZM17.6105 7.40824C17.6036 6.74498 17.3353 6.11121 16.8639 5.64462C16.3925 5.17803 15.756 4.91631 15.0927 4.91632C14.4294 4.91633 13.7929 5.17807 13.3214 5.64468C12.85 6.11128 12.5818 6.74506 12.5749 7.40832C12.5818 8.07157 12.8501 8.70534 13.3215 9.17193C13.7929 9.63852 14.4294 9.90024 15.0927 9.90023C15.756 9.90022 16.3925 9.63848 16.8639 9.17188C17.3354 8.70527 17.6036 8.0715 17.6105 7.40824ZM13.9812 7.40824C13.9857 7.11643 14.1048 6.83811 14.3128 6.63336C14.5207 6.42861 14.8009 6.31385 15.0927 6.31386C15.3846 6.31386 15.6647 6.42863 15.8726 6.6334C16.0806 6.83816 16.1997 7.11648 16.2042 7.40829C16.1997 7.70009 16.0806 7.97841 15.8726 8.18316C15.6647 8.38792 15.3845 8.50268 15.0927 8.50267C14.8008 8.50266 14.5207 8.38789 14.3127 8.18313C14.1048 7.97837 13.9857 7.70004 13.9812 7.40824Z"
+                                        fill="#090F1F" />
+                                </svg>
+                            </div>
+                            <div class="global-logo-text">
+                                <h2>01</h2>
+                            </div>
+                        </div>
+                        <div class="global-card-heading">
+                            <h3>Visa Guard Solutions</h3>
+                        </div>
+                        <div class="global-card-text">
+                            <p>A Visa allows individuals to enter a country for various purposes such as tourism</p>
+                        </div>
                     </div>
                 </div>
-                <div class="aside-logo-close">
-                    <i class="fa-solid fa-xmark"></i>
+                <div class="col-lg-4 col-md-6">
+                    <div class="global-access-card">
+                        <div class="global-logo-wrapper d-flex justify-content-between align-items-center">
+                            <div class="global-logo d-flex align-items-center justify-content-center">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.887 31.401C30.6952 26.2191 23.0374 30.6568 25.9271 35.9975L28.6892 40.7813H22.5419C12.3098 40.3562 12.3146 25.7791 22.542 25.3571H27.6461C34.8406 25.0864 34.8454 14.7631 27.646 14.4903H16.3108L19.073 9.70576C20.8902 6.79616 18.5222 2.69337 15.0928 2.8126C11.6643 2.69852 9.29524 6.79129 11.1129 9.70582L14.4838 15.545C14.5474 15.6503 14.6366 15.7377 14.7431 15.7992C14.8496 15.8607 14.9699 15.8942 15.0929 15.8966H27.6461C32.967 16.0665 32.9687 23.7812 27.646 23.9509H22.5419C10.4468 24.4502 10.4475 41.6884 22.542 42.1875H29.9072C30.0932 42.182 30.2706 42.1082 30.4055 41.9801C30.4485 41.9371 30.4858 41.8886 30.5163 41.836L33.8874 35.9974C34.2953 35.3002 34.5103 34.507 34.5102 33.6992C34.5102 32.8914 34.2951 32.0982 33.887 31.401ZM12.3305 5.81385C14.5151 2.21604 19.8785 5.31238 17.8548 9.00271L15.0929 13.7872L12.3308 9.00263C12.0476 8.51903 11.8983 7.96872 11.8982 7.40829C11.8981 6.84785 12.0474 6.2975 12.3305 5.81385ZM32.6693 35.2943L29.9072 40.0781L27.1452 35.2943C26.8619 34.8104 26.7126 34.2599 26.7126 33.6992C26.7126 33.1385 26.8619 32.588 27.1452 32.1041C29.3309 28.5071 34.6927 31.604 32.6693 35.2943ZM29.9072 31.1813C29.2443 31.1887 28.6111 31.4573 28.145 31.9287C27.6788 32.4001 27.4174 33.0363 27.4174 33.6992C27.4174 34.3622 27.6789 34.9984 28.145 35.4698C28.6112 35.9412 29.2444 36.2097 29.9073 36.2171C30.5702 36.2097 31.2035 35.9411 31.6696 35.4697C32.1357 34.9983 32.3972 34.3621 32.3971 33.6992C32.3971 33.0362 32.1357 32.4 31.6695 31.9286C31.2034 31.4572 30.5702 31.1887 29.9072 31.1813ZM29.9072 34.8109C29.6153 34.8065 29.3367 34.6875 29.1318 34.4795C28.9269 34.2715 28.812 33.9912 28.812 33.6992C28.812 33.4072 28.9269 33.1269 29.1318 32.9189C29.3368 32.7109 29.6153 32.5919 29.9073 32.5875C30.1993 32.5919 30.4778 32.7109 30.6827 32.9189C30.8877 33.1269 31.0025 33.4072 31.0025 33.6992C31.0025 33.9912 30.8876 34.2715 30.6827 34.4795C30.4778 34.6875 30.1992 34.8066 29.9072 34.8109ZM17.6105 7.40824C17.6036 6.74498 17.3353 6.11121 16.8639 5.64462C16.3925 5.17803 15.756 4.91631 15.0927 4.91632C14.4294 4.91633 13.7929 5.17807 13.3214 5.64468C12.85 6.11128 12.5818 6.74506 12.5749 7.40832C12.5818 8.07157 12.8501 8.70534 13.3215 9.17193C13.7929 9.63852 14.4294 9.90024 15.0927 9.90023C15.756 9.90022 16.3925 9.63848 16.8639 9.17188C17.3354 8.70527 17.6036 8.0715 17.6105 7.40824ZM13.9812 7.40824C13.9857 7.11643 14.1048 6.83811 14.3128 6.63336C14.5207 6.42861 14.8009 6.31385 15.0927 6.31386C15.3846 6.31386 15.6647 6.42863 15.8726 6.6334C16.0806 6.83816 16.1997 7.11648 16.2042 7.40829C16.1997 7.70009 16.0806 7.97841 15.8726 8.18316C15.6647 8.38792 15.3845 8.50268 15.0927 8.50267C14.8008 8.50266 14.5207 8.38789 14.3127 8.18313C14.1048 7.97837 13.9857 7.70004 13.9812 7.40824Z"
+                                        fill="#090F1F" />
+                                </svg>
+                            </div>
+                            <div class="global-logo-text">
+                                <h2>01</h2>
+                            </div>
+                        </div>
+                        <div class="global-card-heading">
+                            <h3>Visa Guard Solutions</h3>
+                        </div>
+                        <div class="global-card-text">
+                            <p>A Visa allows individuals to enter a country for various purposes such as tourism</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="global-access-card">
+                        <div class="global-logo-wrapper d-flex justify-content-between align-items-center">
+                            <div class="global-logo d-flex align-items-center justify-content-center">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.887 31.401C30.6952 26.2191 23.0374 30.6568 25.9271 35.9975L28.6892 40.7813H22.5419C12.3098 40.3562 12.3146 25.7791 22.542 25.3571H27.6461C34.8406 25.0864 34.8454 14.7631 27.646 14.4903H16.3108L19.073 9.70576C20.8902 6.79616 18.5222 2.69337 15.0928 2.8126C11.6643 2.69852 9.29524 6.79129 11.1129 9.70582L14.4838 15.545C14.5474 15.6503 14.6366 15.7377 14.7431 15.7992C14.8496 15.8607 14.9699 15.8942 15.0929 15.8966H27.6461C32.967 16.0665 32.9687 23.7812 27.646 23.9509H22.5419C10.4468 24.4502 10.4475 41.6884 22.542 42.1875H29.9072C30.0932 42.182 30.2706 42.1082 30.4055 41.9801C30.4485 41.9371 30.4858 41.8886 30.5163 41.836L33.8874 35.9974C34.2953 35.3002 34.5103 34.507 34.5102 33.6992C34.5102 32.8914 34.2951 32.0982 33.887 31.401ZM12.3305 5.81385C14.5151 2.21604 19.8785 5.31238 17.8548 9.00271L15.0929 13.7872L12.3308 9.00263C12.0476 8.51903 11.8983 7.96872 11.8982 7.40829C11.8981 6.84785 12.0474 6.2975 12.3305 5.81385ZM32.6693 35.2943L29.9072 40.0781L27.1452 35.2943C26.8619 34.8104 26.7126 34.2599 26.7126 33.6992C26.7126 33.1385 26.8619 32.588 27.1452 32.1041C29.3309 28.5071 34.6927 31.604 32.6693 35.2943ZM29.9072 31.1813C29.2443 31.1887 28.6111 31.4573 28.145 31.9287C27.6788 32.4001 27.4174 33.0363 27.4174 33.6992C27.4174 34.3622 27.6789 34.9984 28.145 35.4698C28.6112 35.9412 29.2444 36.2097 29.9073 36.2171C30.5702 36.2097 31.2035 35.9411 31.6696 35.4697C32.1357 34.9983 32.3972 34.3621 32.3971 33.6992C32.3971 33.0362 32.1357 32.4 31.6695 31.9286C31.2034 31.4572 30.5702 31.1887 29.9072 31.1813ZM29.9072 34.8109C29.6153 34.8065 29.3367 34.6875 29.1318 34.4795C28.9269 34.2715 28.812 33.9912 28.812 33.6992C28.812 33.4072 28.9269 33.1269 29.1318 32.9189C29.3368 32.7109 29.6153 32.5919 29.9073 32.5875C30.1993 32.5919 30.4778 32.7109 30.6827 32.9189C30.8877 33.1269 31.0025 33.4072 31.0025 33.6992C31.0025 33.9912 30.8876 34.2715 30.6827 34.4795C30.4778 34.6875 30.1992 34.8066 29.9072 34.8109ZM17.6105 7.40824C17.6036 6.74498 17.3353 6.11121 16.8639 5.64462C16.3925 5.17803 15.756 4.91631 15.0927 4.91632C14.4294 4.91633 13.7929 5.17807 13.3214 5.64468C12.85 6.11128 12.5818 6.74506 12.5749 7.40832C12.5818 8.07157 12.8501 8.70534 13.3215 9.17193C13.7929 9.63852 14.4294 9.90024 15.0927 9.90023C15.756 9.90022 16.3925 9.63848 16.8639 9.17188C17.3354 8.70527 17.6036 8.0715 17.6105 7.40824ZM13.9812 7.40824C13.9857 7.11643 14.1048 6.83811 14.3128 6.63336C14.5207 6.42861 14.8009 6.31385 15.0927 6.31386C15.3846 6.31386 15.6647 6.42863 15.8726 6.6334C16.0806 6.83816 16.1997 7.11648 16.2042 7.40829C16.1997 7.70009 16.0806 7.97841 15.8726 8.18316C15.6647 8.38792 15.3845 8.50268 15.0927 8.50267C14.8008 8.50266 14.5207 8.38789 14.3127 8.18313C14.1048 7.97837 13.9857 7.70004 13.9812 7.40824Z"
+                                        fill="#090F1F" />
+                                </svg>
+                            </div>
+                            <div class="global-logo-text">
+                                <h2>01</h2>
+                            </div>
+                        </div>
+                        <div class="global-card-heading">
+                            <h3>Visa Guard Solutions</h3>
+                        </div>
+                        <div class="global-card-text">
+                            <p>A Visa allows individuals to enter a country for various purposes such as tourism</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="aside-menu-content">
-                <ul class="d-flex flex-column">
-                    <li><a href="#">Home</a></li>
-                    <li>
-                        <a href="#" class="d-flex justify-content-between">About Us <i
-                                class="fa-solid fa-plus submenu-opener"></i></a>
-                        <div class="aside-submenu">
-                            <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Content</a></li>
-                                <li><a href="#">Services</a></li>
+        </div>
+    </section>
+    <!-- global access area end -->
+    <!-- dream section start -->
+    <section class="dream-section">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <div class="common-heading-main">
+                        <h2 class="common-heading">Dream Explore Unlock the Entire World Visa</h2>
+                        <div class="dream-text">
+                            <p>A Visa allows individuals to enter a foreign country for various purposes such as
+                                tourism, work, study, or residency. It is a legal</p>
+                        </div>
+                        <div class="dream-list">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <div class="dream-logo d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/unlock-dream/airport.png" alt="">
+                                    </div> 
+                                    <div class="dream-text">
+                                        <h4>Your Passport to Adventure</h4>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="dream-logo d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/unlock-dream/airport.png" alt="">
+                                    </div> 
+                                    <div class="dream-text">
+                                        <h4>Your Passport to Adventure</h4>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex justify-content-between">Services <i
-                                class="fa-solid fa-plus submenu-opener"></i></a>
-                        <div class="aside-submenu">
-                            <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Content</a></li>
-                                <li><a href="#">Services</a></li>
-                            </ul>
+                       <div class="banner-btn">
+                            <a href="#" class="primary-btn-vzr">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                    </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dream-img">
+                        <img class=" dream-main-img" src="./assets/img/unlock-dream/dream-1.png" alt="">
+                        <img class=" dream-img-two" src="./assets/img/unlock-dream/dream-2.png" alt="">
+                    </div>
+                </div>
             </div>
-        </aside>
-        <!-- aside menu end -->
-    </header>
-    <!-- header area end -->
+        </div>
+    </section>
+
+    <!-- dream section end -->
 
 
 
 
 
-
-
-    <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/vendors/jquery.min.js"></script>
+    <script src="./assets/js/plugins/counterUp/waypoints.min.js"></script>
+    <script src="./assets/js/plugins/counterUp/jquery.counterup.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendors/gsap.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
