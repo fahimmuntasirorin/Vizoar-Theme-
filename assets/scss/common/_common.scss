@@ -43,6 +43,7 @@
   --transition: all 0.1s ease-out 0s;
   --border: #090f1f;
   --separator:#E3E3E3;
+  --vz-button-bg:#FED500;
   --shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
@@ -192,6 +193,17 @@ i {
   i {
     margin-left: 10px;
   }
+  &.btn-theme{
+    background-color: var(--vz-button-bg);
+    color: var(--black);
+    font-weight: bold;
+  }
+  &.btn-simple{
+    color: var(--black);
+    background-color: unset;
+    padding: unset;
+    font-weight: bold;
+  }
 }
 
 .mt-120{
@@ -205,6 +217,12 @@ i {
 }
 .mb-120{
 	margin-bottom: 120px;
+}
+.mb-60{
+	margin-bottom: 60px;
+}
+.mt-60{
+	margin-top: 60px;
 }
 
 .common-heading{

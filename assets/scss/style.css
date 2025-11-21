@@ -41,6 +41,7 @@
   --transition: all 0.1s ease-out 0s;
   --border: #090f1f;
   --separator:#E3E3E3;
+  --vz-button-bg:#FED500;
   --shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
@@ -189,6 +190,17 @@ i {
 .primary-btn-vzr i {
   margin-left: 10px;
 }
+.primary-btn-vzr.btn-theme {
+  background-color: var(--vz-button-bg);
+  color: var(--black);
+  font-weight: bold;
+}
+.primary-btn-vzr.btn-simple {
+  color: var(--black);
+  background-color: unset;
+  padding: unset;
+  font-weight: bold;
+}
 
 .mt-120 {
   margin-top: 120px;
@@ -204,6 +216,14 @@ i {
 
 .mb-120 {
   margin-bottom: 120px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
 }
 
 .common-heading {
@@ -253,6 +273,7 @@ i {
   --transition: all 0.1s ease-out 0s;
   --border: #090f1f;
   --separator:#E3E3E3;
+  --vz-button-bg:#FED500;
   --shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
 }
 
@@ -401,6 +422,17 @@ i {
 .primary-btn-vzr i {
   margin-left: 10px;
 }
+.primary-btn-vzr.btn-theme {
+  background-color: var(--vz-button-bg);
+  color: var(--black);
+  font-weight: bold;
+}
+.primary-btn-vzr.btn-simple {
+  color: var(--black);
+  background-color: unset;
+  padding: unset;
+  font-weight: bold;
+}
 
 .mt-120 {
   margin-top: 120px;
@@ -416,6 +448,14 @@ i {
 
 .mb-120 {
   margin-bottom: 120px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
 }
 
 .common-heading {
@@ -812,4 +852,83 @@ i {
   position: absolute;
   bottom: 50px;
   right: 30px;
+}
+.dream-section .dream-img .dream-img-three {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  z-index: 1;
+}
+.dream-section .dream-img .dream-img-four {
+  position: absolute;
+  top: 160px;
+  right: 100px;
+  z-index: 1;
+}
+.dream-section .dream-img .dream-shape {
+  position: absolute;
+  top: 125px;
+  right: 120px;
+}
+
+.global-country .gx-5 {
+  --bs-gutter-x: 30px;
+}
+.global-country .gy-5 {
+  --bs-gutter-y: 30px;
+}
+.global-country .single-global-country {
+  border-radius: 30px;
+}
+.global-country .single-global-country .global-flag-bg {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 30px;
+  left: 40px;
+  justify-content: center;
+}
+.global-country .global-btn {
+  margin-top: 5px;
+  position: relative;
+}
+.global-country .global-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--separator);
+  transform: translate(0%, -50%);
+  z-index: -1;
+}
+
+.discover-section .gy-5 {
+  --bs-gutter-y: 30px;
+}
+.discover-section .gx-5 {
+  --bs-gutter-x: 30px;
+}
+.discover-section .discover-heading .discover-text {
+  max-width: 495px;
+}
+.discover-section .discover-card {
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 40px;
+}
+.discover-section .discover-card .discover-title-logo {
+  height: 60px;
+  width: 60px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+.discover-section .discover-card .discover-card-text {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

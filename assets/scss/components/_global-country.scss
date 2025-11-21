@@ -1,0 +1,39 @@
+.global-country {
+  .gx-5 {
+    --bs-gutter-x: 30px;
+  }
+  .gy-5 {
+    --bs-gutter-y: 30px;
+  }
+  .single-global-country {
+    border-radius: 30px;
+    .global-flag-bg {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: var(--white);
+      display: flex;
+      position: absolute;
+      align-items: center;
+      top: 30px;
+      left: 40px;
+      justify-content: center;
+    }
+  }
+  .global-btn {
+    margin-top: 5px;
+    position: relative;
+    &::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--separator);
+    transform: translate(-0%,-50%);
+    z-index: -1;
+  }
+  }
+  
+}

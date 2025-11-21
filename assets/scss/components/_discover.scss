@@ -1,0 +1,28 @@
+.discover-section {
+  .gy-5 {
+    --bs-gutter-y: 30px;
+  }
+  .gx-5 {
+    --bs-gutter-x: 30px;
+  }
+  .discover-heading {
+    .discover-text {
+      max-width: 495px;
+    }
+  }
+  .discover-card {
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 40px;
+    .discover-title-logo {
+      height: 60px;
+      width: 60px;
+      background-color: var(--primary);
+      border-radius: 50%;
+    }
+    .discover-card-text {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
